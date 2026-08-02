@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blush Calculator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <main class="calculator" id="calculator">
+
+    <!-- Title -->
+    <div class="calc-title">
+      <span class="calc-icon" aria-hidden="true">
+        <!-- inline SVG calculator icon -->
+        <svg viewBox="0 0 24 24" width="26" height="26" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect x="3.5" y="2.5" width="17" height="19" rx="3.5" stroke="#FF69B4" stroke-width="1.6"/>
+          <rect x="6.5" y="5.5" width="11" height="4" rx="1.2" fill="#FFD6E8"/>
+          <circle cx="7.5" cy="13.5" r="1.15" fill="#FF69B4"/>
+          <circle cx="12" cy="13.5" r="1.15" fill="#FF69B4"/>
+          <circle cx="16.5" cy="13.5" r="1.15" fill="#FF69B4"/>
+          <circle cx="7.5" cy="17.5" r="1.15" fill="#FF69B4"/>
+          <circle cx="12" cy="17.5" r="1.15" fill="#FF69B4"/>
+          <circle cx="16.5" cy="17.5" r="1.15" fill="#FF69B4"/>
+        </svg>
+      </span>
+      <h1>Blush<span>Calc</span></h1>
+    </div>
+
+    <!-- Display -->
+    <div class="display-wrap">
+      <div class="display" id="display">
+        <div class="expression" id="expression"></div>
+        <div class="result" id="result">0</div>
+      </div>
+    </div>
+
+    <!-- Buttons -->
+    <div class="buttons">
+      <button class="btn func" data-action="clear">C</button>
+      <button class="btn func" data-action="delete">⌫</button>
+      <button class="btn func" data-action="percent">%</button>
+      <button class="btn op" data-action="divide">÷</button>
+
+      <button class="btn num" data-value="7">7</button>
+      <button class="btn num" data-value="8">8</button>
+      <button class="btn num" data-value="9">9</button>
+      <button class="btn op" data-action="multiply">×</button>
+
+      <button class="btn num" data-value="4">4</button>
+      <button class="btn num" data-value="5">5</button>
+      <button class="btn num" data-value="6">6</button>
+      <button class="btn op" data-action="subtract">−</button>
+
+      <button class="btn num" data-value="1">1</button>
+      <button class="btn num" data-value="2">2</button>
+      <button class="btn num" data-value="3">3</button>
+      <button class="btn op" data-action="add">+</button>
+
+      <button class="btn num zero" data-value="0">0</button>
+      <button class="btn num" data-value=".">.</button>
+      <button class="btn equals" data-action="equals">=</button>
+    </div>
+
+  </main>
+
+  <footer class="footer">
+    Made with ❤️ by Urwa Murtaza
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
